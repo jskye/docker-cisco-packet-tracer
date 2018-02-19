@@ -29,7 +29,7 @@ In the XQuartz preferences, go to the `Security` tab and make sure you’ve got 
   <img src="images/xquartz_preferences.png" width="500" height="363" alt="XQuartz - Allow connections from network clients"/>
 </p>
 
-Afer that, you need to run `xhost` and allow connections from your local machine.
+After that, you need to run `xhost` and allow connections from your local machine.
 
 ```sh
 xhost + $(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
